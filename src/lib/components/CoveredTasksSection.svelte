@@ -23,13 +23,13 @@
 <section id="tasks" class="py-20 bg-[#F8F9FA] border-b border-[#E2E8F0]">
 	<div class="container mx-auto px-4">
 		<div class="max-w-3xl mb-10">
-			<div class="text-xs font-mono uppercase tracking-widest text-[#D22F25] font-bold mb-2">
+			<div class="text-xs uppercase tracking-widest text-[#D22F25] font-medium mb-2">
 				Task Matrix &amp; Evaluation Catalog
 			</div>
-			<h2 class="text-3xl sm:text-4xl font-heading font-black uppercase text-[#0F172A] tracking-tight mb-4">
+			<h2 class="text-3xl sm:text-4xl font-heading font-light uppercase text-[#0F172A] tracking-tight mb-4">
 				COMMON COVERED TASKS (CCTS)
 			</h2>
-			<p class="text-slate-600 text-base leading-relaxed">
+			<p class="text-slate-600 text-base leading-relaxed font-light">
 				Covering hundreds of tasks under 49 CFR Part 192 (Natural Gas) &amp; Part 195 (Hazardous Liquids), from industry-standard CCTs to custom operator-specific qualification requirements.
 			</p>
 		</div>
@@ -42,7 +42,7 @@
 					<button
 						type="button"
 						onclick={() => (selectedCategory = cat)}
-						class="px-3 py-1.5 text-xs font-mono uppercase tracking-wider transition-colors {selectedCategory === cat ? 'bg-[#0A0A0A] text-white font-bold' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}"
+						class="px-3 py-1.5 text-xs uppercase tracking-wider transition-colors {selectedCategory === cat ? 'bg-[#0A0A0A] text-white font-medium' : 'bg-slate-100 text-slate-700 hover:bg-slate-200 font-light'}"
 					>
 						{cat}
 					</button>
@@ -55,13 +55,13 @@
 					type="text"
 					bind:value={searchQuery}
 					placeholder="Search covered task..."
-					class="w-full bg-[#F8F9FA] border border-slate-300 px-3 py-1.5 text-xs font-mono text-slate-800 focus:outline-none focus:border-[#D22F25]"
+					class="w-full bg-[#F8F9FA] border border-slate-300 px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-[#D22F25] font-light"
 				/>
 				{#if searchQuery}
 					<button
 						type="button"
 						onclick={() => (searchQuery = '')}
-						class="absolute right-2.5 top-1.5 text-slate-400 hover:text-slate-600 text-xs font-mono"
+						class="absolute right-2.5 top-1.5 text-slate-400 hover:text-slate-600 text-xs"
 					>
 						✕
 					</button>
@@ -75,23 +75,23 @@
 				<div class="industrial-card bg-white p-5 flex flex-col justify-between hover:border-[#D22F25] transition-colors">
 					<div>
 						<div class="flex items-center justify-between mb-2">
-							<span class="text-[10px] font-mono font-bold text-[#D22F25] tracking-wider">
+							<span class="text-[10px] font-medium text-[#D22F25] tracking-wider">
 								{task.code}
 							</span>
-							<span class="text-[10px] font-mono text-slate-400 uppercase">
+							<span class="text-[10px] text-slate-400 uppercase font-light">
 								{task.category}
 							</span>
 						</div>
-						<h3 class="text-base font-heading font-bold text-[#0F172A] mb-2 leading-snug">
+						<h3 class="text-base font-heading font-normal text-[#0F172A] mb-2 leading-snug">
 							{task.title}
 						</h3>
-						<p class="text-xs text-slate-600 leading-relaxed font-sans mb-4">
+						<p class="text-xs text-slate-600 leading-relaxed font-light mb-4">
 							{task.description}
 						</p>
 					</div>
-					<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
+					<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-light">
 						<span>PHMSA Compliant</span>
-						<a href="/quote" class="text-[#D22F25] font-bold hover:underline">
+						<a href="/quote" class="text-[#D22F25] font-medium hover:underline">
 							Evaluate ›
 						</a>
 					</div>
@@ -101,20 +101,20 @@
 
 		{#if filteredTasks.length === 0}
 			<div class="text-center py-12 bg-white industrial-box">
-				<p class="text-sm font-mono text-slate-500">No tasks matched your search query "{searchQuery}".</p>
+				<p class="text-sm text-slate-500 font-light">No tasks matched your search query "{searchQuery}".</p>
 				<button
 					type="button"
 					onclick={() => { searchQuery = ''; selectedCategory = 'All'; }}
-					class="mt-3 text-xs font-mono text-[#D22F25] underline font-bold"
+					class="mt-3 text-xs text-[#D22F25] underline font-medium"
 				>
 					Reset filters
 				</button>
 			</div>
 		{/if}
 
-		<div class="mt-8 text-center text-xs font-mono text-slate-500">
+		<div class="mt-8 text-center text-xs text-slate-500 font-light">
 			Looking for a custom operator-specific task not listed above? We qualify hundreds of additional tasks. 
-			<a href="/quote" class="text-[#D22F25] font-bold underline ml-1">Contact our Master Evaluator team</a>.
+			<a href="/quote" class="text-[#D22F25] font-medium underline ml-1">Contact our Master Evaluator team</a>.
 		</div>
 	</div>
 </section>

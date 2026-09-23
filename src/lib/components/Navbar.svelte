@@ -18,13 +18,13 @@
 
 <header class="sticky top-0 z-50 bg-[#0A0A0A] border-b border-[#262626] text-white">
 	<!-- Top notification bar -->
-	<div class="bg-[#D22F25] text-white px-4 py-1.5 text-xs font-mono tracking-wider uppercase flex justify-between items-center">
+	<div class="bg-[#D22F25] text-white px-4 py-1.5 text-xs tracking-wider uppercase flex justify-between items-center font-normal">
 		<div class="container mx-auto flex justify-between items-center">
 			<span class="flex items-center gap-2">
-				<span class="inline-block w-2 h-2 rounded-full bg-white animate-pulse"></span>
-				<span>PHMSA 49 CFR 192 &amp; 195 | Remote Proctoring Now Available Nationwide</span>
+				<span class="inline-block w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+				<span class="font-light">PHMSA 49 CFR 192 &amp; 195 | Remote Proctoring Now Available Nationwide</span>
 			</span>
-			<a href="tel:{COMPANY_INFO.phoneRaw}" class="hidden sm:inline-flex items-center gap-1.5 font-bold hover:underline">
+			<a href="tel:{COMPANY_INFO.phoneRaw}" class="hidden sm:inline-flex items-center gap-1.5 font-medium hover:underline">
 				<span>CALL DIRECT: {COMPANY_INFO.phone}</span>
 			</a>
 		</div>
@@ -34,54 +34,54 @@
 	<div class="container mx-auto px-4 py-3.5 flex items-center justify-between">
 		<!-- Brand Logo -->
 		<a href="/" class="flex items-center gap-3 group">
-			<div class="w-10 h-10 bg-[#D22F25] flex items-center justify-center font-heading font-black text-xl text-white tracking-tighter border border-white/20">
+			<div class="w-10 h-10 bg-[#D22F25] flex items-center justify-center font-heading font-light text-xl text-white tracking-tighter border border-white/20">
 				OQ
 			</div>
 			<div>
-				<div class="font-heading font-black tracking-tight text-xl leading-none text-white group-hover:text-[#D22F25] transition-colors">
+				<div class="font-heading font-medium tracking-tight text-xl leading-none text-white group-hover:text-[#D22F25] transition-colors">
 					NEED OQ<span class="text-[#D22F25]">.</span>
 				</div>
-				<div class="text-[10px] font-mono tracking-widest text-slate-400 uppercase mt-0.5">
+				<div class="text-[10px] tracking-widest text-slate-400 uppercase mt-0.5 font-light">
 					By Safe Hands Safety
 				</div>
 			</div>
 		</a>
 
 		<!-- Desktop Navigation Links -->
-		<nav class="hidden lg:flex items-center gap-6 text-xs font-mono font-semibold uppercase tracking-wider">
+		<nav class="hidden lg:flex items-center gap-6 text-xs uppercase tracking-wider font-normal">
 			<a
 				href="/"
-				class="transition-colors py-1 {isActive('/') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+				class="transition-colors py-1 {isActive('/') ? 'text-[#D22F25] font-medium border-b border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
 			>
 				Home
 			</a>
 			<a
 				href="/oq-pipeline"
-				class="transition-colors py-1 {isActive('/oq-pipeline') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+				class="transition-colors py-1 {isActive('/oq-pipeline') ? 'text-[#D22F25] font-medium border-b border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
 			>
 				Platforms &amp; OQ
 			</a>
 			<a
 				href="/covered-tasks"
-				class="transition-colors py-1 {isActive('/covered-tasks') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+				class="transition-colors py-1 {isActive('/covered-tasks') ? 'text-[#D22F25] font-medium border-b border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
 			>
 				Covered Tasks
 			</a>
 			<a
 				href="/accreditations"
-				class="transition-colors py-1 {isActive('/accreditations') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+				class="transition-colors py-1 {isActive('/accreditations') ? 'text-[#D22F25] font-medium border-b border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
 			>
 				Accreditations
 			</a>
 			<a
 				href="/locations"
-				class="transition-colors py-1 {isActive('/locations') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+				class="transition-colors py-1 {isActive('/locations') ? 'text-[#D22F25] font-medium border-b border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
 			>
 				Training Centers
 			</a>
 			<a
 				href="/faq"
-				class="transition-colors py-1 {isActive('/faq') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+				class="transition-colors py-1 {isActive('/faq') ? 'text-[#D22F25] font-medium border-b border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
 			>
 				OQ FAQ
 			</a>
@@ -91,16 +91,16 @@
 		<div class="hidden sm:flex items-center gap-4">
 			<a
 				href="tel:{COMPANY_INFO.phoneRaw}"
-				class="text-xs font-mono text-slate-300 hover:text-white flex items-center gap-1.5"
+				class="text-xs text-slate-300 hover:text-white flex items-center gap-1.5 font-light"
 			>
 				<svg class="w-4 h-4 text-[#D22F25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
 				</svg>
 				<span>{COMPANY_INFO.phone}</span>
 			</a>
 			<a
 				href="/quote"
-				class="bg-[#D22F25] hover:bg-[#EB392F] text-white px-4 py-2 text-xs font-mono uppercase tracking-wider font-bold transition-all shadow-sm hover:-translate-y-0.5"
+				class="bg-[#D22F25] hover:bg-[#EB392F] text-white px-4 py-2 text-xs uppercase tracking-wider font-medium transition-all shadow-sm hover:-translate-y-0.5"
 			>
 				Request OQ Quote
 			</a>
@@ -115,9 +115,9 @@
 		>
 			<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				{#if mobileMenuOpen}
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
 				{:else}
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
 				{/if}
 			</svg>
 		</button>
@@ -125,60 +125,60 @@
 
 	<!-- Mobile dropdown -->
 	{#if mobileMenuOpen}
-		<div class="lg:hidden bg-[#111111] border-b border-[#262626] px-4 py-4 space-y-3">
+		<div class="lg:hidden bg-[#111111] border-b border-[#262626] px-4 py-4 space-y-3 font-normal">
 			<a
 				href="/"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-sm font-medium py-1.5 {isActive('/') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+				class="block text-sm py-1.5 {isActive('/') ? 'text-[#D22F25] font-medium' : 'text-slate-200 hover:text-white'}"
 			>
 				Home
 			</a>
 			<a
 				href="/oq-pipeline"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-sm font-medium py-1.5 {isActive('/oq-pipeline') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+				class="block text-sm py-1.5 {isActive('/oq-pipeline') ? 'text-[#D22F25] font-medium' : 'text-slate-200 hover:text-white'}"
 			>
 				Platforms &amp; OQ
 			</a>
 			<a
 				href="/covered-tasks"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-sm font-medium py-1.5 {isActive('/covered-tasks') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+				class="block text-sm py-1.5 {isActive('/covered-tasks') ? 'text-[#D22F25] font-medium' : 'text-slate-200 hover:text-white'}"
 			>
 				Covered Tasks
 			</a>
 			<a
 				href="/accreditations"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-sm font-medium py-1.5 {isActive('/accreditations') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+				class="block text-sm py-1.5 {isActive('/accreditations') ? 'text-[#D22F25] font-medium' : 'text-slate-200 hover:text-white'}"
 			>
 				Accreditations
 			</a>
 			<a
 				href="/locations"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-sm font-medium py-1.5 {isActive('/locations') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+				class="block text-sm py-1.5 {isActive('/locations') ? 'text-[#D22F25] font-medium' : 'text-slate-200 hover:text-white'}"
 			>
 				Training Centers
 			</a>
 			<a
 				href="/faq"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-sm font-medium py-1.5 {isActive('/faq') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+				class="block text-sm py-1.5 {isActive('/faq') ? 'text-[#D22F25] font-medium' : 'text-slate-200 hover:text-white'}"
 			>
 				OQ FAQ
 			</a>
 			<div class="pt-3 border-t border-[#262626] flex flex-col gap-2">
 				<a
 					href="tel:{COMPANY_INFO.phoneRaw}"
-					class="text-xs font-mono text-[#D22F25] font-bold py-1"
+					class="text-xs text-[#D22F25] font-medium py-1"
 				>
 					Direct Line: {COMPANY_INFO.phone}
 				</a>
 				<a
 					href="/quote"
 					onclick={() => (mobileMenuOpen = false)}
-					class="w-full text-center bg-[#D22F25] text-white py-2.5 text-xs font-mono uppercase tracking-wider font-bold"
+					class="w-full text-center bg-[#D22F25] text-white py-2.5 text-xs uppercase tracking-wider font-medium"
 				>
 					Request OQ Quote
 				</a>

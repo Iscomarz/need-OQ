@@ -59,27 +59,27 @@
 		<section class="bg-[#0A0A0A] text-white py-16 border-b border-[#262626] bg-grid-dark">
 			<div class="container mx-auto px-4">
 				<div class="max-w-4xl">
-					<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#171717] border border-[#2E2E2E] text-xs font-mono text-slate-300 uppercase tracking-widest mb-4">
-						<span class="w-2 h-2 rounded-full bg-[#D22F25]"></span>
+					<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#171717] border border-[#2E2E2E] text-xs text-slate-300 uppercase tracking-widest mb-4 font-light">
+						<span class="w-1.5 h-1.5 rounded-full bg-[#D22F25]"></span>
 						<span>Authorized Safety Certifications</span>
 					</div>
-					<h1 class="text-3xl sm:text-5xl font-black font-heading tracking-tight uppercase mb-4">
+					<h1 class="text-3xl sm:text-5xl font-light font-heading tracking-tight uppercase mb-4 leading-tight">
 						ACCREDITATIONS &amp; <br />
-						<span class="text-[#D22F25]">INDUSTRY SAFETY SPONSORS</span>
+						<span class="text-[#D22F25] font-normal">INDUSTRY SAFETY SPONSORS</span>
 					</h1>
-					<p class="text-slate-300 text-base sm:text-lg max-w-2xl font-sans leading-relaxed">
+					<p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
 						Meeting operator master service agreements (MSAs) requires certified safety credentials. Need OQ delivers fully authorized programs recognized by leading energy producers.
 					</p>
 					<div class="mt-8 flex flex-wrap gap-4">
 						<a
 							href="/quote"
-							class="px-6 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-xs uppercase font-bold tracking-wider transition-all"
+							class="px-6 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white text-xs uppercase font-medium tracking-wider transition-all"
 						>
 							Register for Class
 						</a>
 						<a
 							href="/locations"
-							class="px-6 py-3 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white font-mono text-xs uppercase font-semibold transition-all"
+							class="px-6 py-3 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white text-xs uppercase font-normal transition-all"
 						>
 							View Training Centers
 						</a>
@@ -95,10 +95,10 @@
 		<section class="py-20 bg-white border-b border-[#E2E8F0]">
 			<div class="container mx-auto px-4">
 				<div class="max-w-3xl mb-12">
-					<div class="text-xs font-mono uppercase tracking-widest text-[#D22F25] font-bold mb-2">
+					<div class="text-xs uppercase tracking-widest text-[#D22F25] font-medium mb-2">
 						Authorized Course Catalog
 					</div>
-					<h2 class="text-3xl font-heading font-black uppercase text-[#0F172A] tracking-tight">
+					<h2 class="text-3xl font-heading font-light uppercase text-[#0F172A] tracking-tight">
 						SAFETY COURSES FOR OPERATOR COMPLIANCE
 					</h2>
 				</div>
@@ -108,23 +108,23 @@
 						<div class="industrial-card bg-[#F8F9FA] p-6 flex flex-col justify-between hover:border-[#D22F25] transition-colors">
 							<div>
 								<div class="flex items-center justify-between mb-3">
-									<span class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#D22F25] bg-red-50 px-2 py-0.5 border border-red-100">
+									<span class="text-[10px] font-medium uppercase tracking-wider text-[#D22F25] bg-red-50 px-2 py-0.5 border border-red-100">
 										{item.role}
 									</span>
 								</div>
-								<h3 class="text-lg font-heading font-bold text-[#0F172A] mb-2 leading-snug">
+								<h3 class="text-lg font-heading font-normal text-[#0F172A] mb-2 leading-snug">
 									{item.title}
 								</h3>
-								<p class="text-xs text-slate-600 font-sans leading-relaxed mb-4">
+								<p class="text-xs text-slate-600 font-light leading-relaxed mb-4">
 									{item.desc}
 								</p>
 							</div>
 
 							<div class="pt-4 border-t border-slate-200">
-								<div class="text-[10px] font-mono uppercase text-slate-400 font-semibold mb-1">
+								<div class="text-[10px] uppercase text-slate-400 font-medium mb-1">
 									Target Audience:
 								</div>
-								<p class="text-xs font-mono text-slate-700">
+								<p class="text-xs text-slate-700 font-light">
 									{item.audience}
 								</p>
 							</div>
@@ -135,16 +135,16 @@
 				<!-- Fast CTA Strip -->
 				<div class="mt-12 p-8 bg-[#0A0A0A] text-white border border-[#262626] flex flex-col sm:flex-row items-center justify-between gap-6">
 					<div>
-						<h3 class="text-xl font-heading font-bold uppercase text-white mb-1">
+						<h3 class="text-xl font-heading font-light uppercase text-white mb-1">
 							Need a Combo Safety &amp; OQ Evaluation Package?
 						</h3>
-						<p class="text-xs text-slate-300 font-sans">
+						<p class="text-xs text-slate-300 font-light">
 							Save crew travel time by scheduling Basin United or H2S Clear alongside your technician OQ evaluations.
 						</p>
 					</div>
 					<a
 						href="/quote"
-						class="whitespace-nowrap px-6 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-xs uppercase font-bold tracking-wider"
+						class="whitespace-nowrap px-6 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white text-xs uppercase font-medium tracking-wider"
 					>
 						Book Combined Session
 					</a>

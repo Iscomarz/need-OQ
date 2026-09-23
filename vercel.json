@@ -1,0 +1,14 @@
+{
+	"ignoreCommand": "bash -c 'if [ \"$VERCEL_GIT_COMMIT_REF\" == \"main\" ]; then exit 1; else exit 0; fi'",
+	"headers": [
+		{
+			"source": "/(.*)\\.(ico|png|jpg|jpeg|svg|webp|avif|woff2|woff)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, immutable"
+				}
+			]
+		}
+	]
+}

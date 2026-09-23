@@ -9,19 +9,19 @@
 
 	<div class="container mx-auto px-4 relative z-10">
 		<div class="max-w-4xl">
-			<!-- Monospace status tag -->
-			<div class="inline-flex items-center gap-2.5 px-3 py-1.5 bg-[#171717] border border-[#2E2E2E] text-xs font-mono text-slate-300 uppercase tracking-widest mb-6">
-				<span class="w-2 h-2 rounded-full bg-[#D22F25]"></span>
+			<!-- Status tag -->
+			<div class="inline-flex items-center gap-2.5 px-3 py-1.5 bg-[#171717] border border-[#2E2E2E] text-xs text-slate-300 uppercase tracking-widest mb-6 font-light">
+				<span class="w-1.5 h-1.5 rounded-full bg-[#D22F25]"></span>
 				<span>{COMPANY_INFO.name} — Performing OQs Nationwide Since 1999</span>
 			</div>
 
-			<!-- Main Headline -->
-			<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading tracking-tight leading-tight uppercase text-white mb-6">
+			<!-- Main Headline (light & slender) -->
+			<h1 class="text-4xl sm:text-5xl lg:text-6xl font-light font-heading tracking-tight leading-tight uppercase text-white mb-6">
 				OPERATOR QUALIFICATION <br />
-				<span class="text-slate-200">
+				<span class="text-slate-300 font-light">
 					MADE FAST, ACCURATE &amp;
 				</span><br />
-				<span class="text-[#D22F25]">100% AUDIT-READY.</span>
+				<span class="text-[#D22F25] font-normal">100% AUDIT-READY.</span>
 			</h1>
 
 			<!-- Subtitle -->
@@ -34,35 +34,35 @@
 			<div class="flex flex-wrap items-center gap-4 mb-14">
 				<a
 					href="/quote"
-					class="px-7 py-3.5 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-sm uppercase tracking-wider font-semibold transition-all shadow-lg shadow-red-950/40 hover:-translate-y-0.5"
+					class="px-7 py-3.5 bg-[#D22F25] hover:bg-[#EB392F] text-white text-xs uppercase tracking-wider font-medium transition-all shadow-lg shadow-red-950/40 hover:-translate-y-0.5"
 				>
 					Book Crew Evaluation
 				</a>
 				<a
 					href="/covered-tasks"
-					class="px-7 py-3.5 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white font-mono text-sm uppercase tracking-wider font-medium transition-all hover:-translate-y-0.5"
+					class="px-7 py-3.5 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white text-xs uppercase tracking-wider font-normal transition-all hover:-translate-y-0.5"
 				>
 					View Covered Tasks
 				</a>
 			</div>
 
-			<!-- Industrial Metrics Row -->
+			<!-- Metrics Row (light weights) -->
 			<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-[#222222]">
 				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">25+</div>
-					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Years in Oil Patch</div>
+					<div class="text-2xl sm:text-3xl font-heading font-light text-white">25+</div>
+					<div class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-light">Years in Oil Patch</div>
 				</div>
 				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">100s</div>
-					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Covered Tasks (CCTs)</div>
+					<div class="text-2xl sm:text-3xl font-heading font-light text-white">100s</div>
+					<div class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-light">Covered Tasks (CCTs)</div>
 				</div>
 				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">3 WAYS</div>
-					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Mobile, Center &amp; CBT</div>
+					<div class="text-2xl sm:text-3xl font-heading font-light text-white">3 WAYS</div>
+					<div class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-light">Mobile, Center &amp; CBT</div>
 				</div>
 				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">6+</div>
-					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Approved Platforms</div>
+					<div class="text-2xl sm:text-3xl font-heading font-light text-white">6+</div>
+					<div class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-light">Approved Platforms</div>
 				</div>
 			</div>
 		</div>

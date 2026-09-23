@@ -20,27 +20,27 @@
 		<section class="bg-[#0A0A0A] text-white py-16 border-b border-[#262626] bg-grid-dark">
 			<div class="container mx-auto px-4">
 				<div class="max-w-4xl">
-					<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#171717] border border-[#2E2E2E] text-xs font-mono text-slate-300 uppercase tracking-widest mb-4">
-						<span class="w-2 h-2 rounded-full bg-[#D22F25]"></span>
+					<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#171717] border border-[#2E2E2E] text-xs text-slate-300 uppercase tracking-widest mb-4 font-light">
+						<span class="w-1.5 h-1.5 rounded-full bg-[#D22F25]"></span>
 						<span>Regulatory Guide &amp; Compliance Clarifications</span>
 					</div>
-					<h1 class="text-3xl sm:text-5xl font-black font-heading tracking-tight uppercase mb-4">
+					<h1 class="text-3xl sm:text-5xl font-light font-heading tracking-tight uppercase mb-4 leading-tight">
 						THE OPERATOR QUALIFICATION RULE <br />
-						<span class="text-[#D22F25]">&amp; FREQUENTLY ASKED QUESTIONS</span>
+						<span class="text-[#D22F25] font-normal">&amp; FREQUENTLY ASKED QUESTIONS</span>
 					</h1>
-					<p class="text-slate-300 text-base sm:text-lg max-w-2xl font-sans leading-relaxed">
+					<p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
 						Operator qualification is vital for employee safety and pipeline reliability. Here is everything you need to know about regulatory requirements, evaluation intervals, and testing workflows.
 					</p>
 					<div class="mt-8 flex flex-wrap gap-4">
 						<a
 							href="/quote"
-							class="px-6 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-xs uppercase font-bold tracking-wider transition-all"
+							class="px-6 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white text-xs uppercase font-medium tracking-wider transition-all"
 						>
 							Ask an Evaluator / Get Quote
 						</a>
 						<a
 							href="/covered-tasks"
-							class="px-6 py-3 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white font-mono text-xs uppercase font-semibold transition-all"
+							class="px-6 py-3 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white text-xs uppercase font-normal transition-all"
 						>
 							View Covered Tasks
 						</a>
@@ -55,13 +55,13 @@
 		<!-- Regulatory History & AOC Context -->
 		<section class="py-16 bg-white border-t border-[#E2E8F0]">
 			<div class="container mx-auto px-4 max-w-4xl">
-				<div class="text-xs font-mono uppercase tracking-widest text-[#D22F25] font-bold mb-2">
+				<div class="text-xs uppercase tracking-widest text-[#D22F25] font-medium mb-2">
 					Regulatory Background
 				</div>
-				<h2 class="text-2xl sm:text-3xl font-heading font-black uppercase text-[#0F172A] tracking-tight mb-4">
+				<h2 class="text-2xl sm:text-3xl font-heading font-light uppercase text-[#0F172A] tracking-tight mb-4">
 					HISTORY &amp; MANDATE OF THE OQ RULE
 				</h2>
-				<div class="space-y-4 text-sm text-slate-600 font-sans leading-relaxed">
+				<div class="space-y-4 text-sm text-slate-600 font-light leading-relaxed">
 					<p>
 						In August 1999, the Research and Special Programs Administration (RSPA)—now the Pipeline and Hazardous Materials Safety Administration (PHMSA)—issued a final rule establishing qualification requirements for pipeline operating and contractor personnel under <strong>49 CFR Part 192 (Subpart N)</strong> and <strong>49 CFR Part 195 (Subpart G)</strong>.
 					</p>
@@ -71,13 +71,13 @@
 				</div>
 
 				<div class="mt-8 p-6 bg-[#F8F9FA] border border-slate-200">
-					<h3 class="font-heading font-bold text-base uppercase text-[#0F172A] mb-2">
+					<h3 class="font-heading font-normal text-base uppercase text-[#0F172A] mb-2">
 						What is an Abnormal Operating Condition (AOC)?
 					</h3>
-					<p class="text-xs text-slate-600 font-sans leading-relaxed mb-4">
+					<p class="text-xs text-slate-600 font-light leading-relaxed mb-4">
 						An AOC is any condition that may indicate a malfunction of a pipeline component, unanticipated pressure spike, hazardous gas release, or deviation from normal operating limits that could pose a threat to people, property, or the environment.
 					</p>
-					<div class="text-xs font-mono text-slate-700">
+					<div class="text-xs text-slate-700 font-light">
 						✓ Every Need OQ evaluation includes comprehensive verification of AOC identification and response protocols.
 					</div>
 				</div>
@@ -85,7 +85,7 @@
 				<div class="mt-10 text-center">
 					<a
 						href="/quote"
-						class="inline-block px-7 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-xs uppercase font-bold tracking-wider transition-all"
+						class="inline-block px-7 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white text-xs uppercase font-medium tracking-wider transition-all"
 					>
 						Schedule OQ Evaluation Now
 					</a>
