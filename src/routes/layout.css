@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-heading: 'Outfit', sans-serif;
+	--font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+	--color-brand-red: #D22F25;
+	--color-brand-red-hover: #EB392F;
+	--color-brand-red-dark: #A82018;
+	--color-brand-red-subtle: #FEF2F2;
+
+	--color-industrial-dark: #000000;
+	--color-industrial-surface: #0A0A0A;
+	--color-industrial-border: #1F1F1F;
+
+	--color-slate-canvas: #F8F9FA;
+	--color-slate-surface: #FFFFFF;
+	--color-slate-subtle: #F1F5F9;
+	--color-slate-border: #E2E8F0;
+	--color-slate-text-main: #0F172A;
+	--color-slate-text-muted: #475569;
+}
+
+:root {
+	--brand-red: #D22F25;
+	--brand-canvas: #F8F9FA;
+}
+
+body {
+	font-family: var(--font-sans);
+	background-color: #F8F9FA;
+	color: #0F172A;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-heading);
+	letter-spacing: -0.025em;
+}
+
+/* Technical Grid Pattern for Light Canvas */
+.bg-grid-tech {
+	background-size: 32px 32px;
+	background-image: 
+		linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+}
+
+.bg-grid-dark {
+	background-size: 32px 32px;
+	background-image: 
+		linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+.industrial-card {
+	border: 1px solid #E2E8F0;
+	border-left: 4px solid #D22F25;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.industrial-box {
+	border: 1px solid #E2E8F0;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* Accessible focus ring helper */
+.focus-ring {
+	outline: none;
+}
+.focus-ring:focus-visible {
+	outline: 2px solid #D22F25;
+	outline-offset: 2px;
+}
+
+/* Page transitions */
+@keyframes fade-in {
+	from { opacity: 0; transform: translateY(4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-out {
+	from { opacity: 1; transform: translateY(0); }
+	to { opacity: 0; transform: translateY(-4px); }
+}
+
+::view-transition-old(root) {
+	animation: 180ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+}
+
+::view-transition-new(root) {
+	animation: 220ms cubic-bezier(0, 0, 0.2, 1) 40ms both fade-in;
+}
