@@ -18,7 +18,7 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			{#each LOCATIONS as loc}
-				<div class="industrial-box p-6 bg-[#F8F9FA] relative {loc.isPrimary ? 'border-l-4 border-l-[#D22F25]' : ''}">
+				<div class="industrial-box p-6 bg-[#F8F9FA] relative {loc.isPrimary ? 'border-[#D22F25] ring-1 ring-[#D22F25]' : ''}">
 					{#if loc.isPrimary}
 						<span class="absolute top-4 right-4 text-[10px] font-mono uppercase font-bold text-white bg-[#D22F25] px-2 py-0.5">
 							Main ATAC Facility

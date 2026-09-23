@@ -66,7 +66,7 @@
 			</div>
 			<div class="flex-shrink-0">
 				<a
-					href="#quote"
+					href="/quote"
 					class="inline-block px-6 py-3 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-xs uppercase tracking-wider font-bold transition-all"
 				>
 					Coordinate Deployment

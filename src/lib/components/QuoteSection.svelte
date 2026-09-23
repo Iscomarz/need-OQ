@@ -151,7 +151,7 @@
 						</div>
 
 						{#if errorMessage}
-							<div class="p-4 bg-red-50 border-l-4 border-[#D22F25] text-red-800 text-xs font-mono">
+							<div class="p-4 bg-red-50 border border-red-200 text-red-800 text-xs font-mono">
 								<strong>Error:</strong> {errorMessage}
 							</div>
 						{/if}

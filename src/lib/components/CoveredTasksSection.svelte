@@ -91,7 +91,7 @@
 					</div>
 					<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
 						<span>PHMSA Compliant</span>
-						<a href="#quote" class="text-[#D22F25] font-bold hover:underline">
+						<a href="/quote" class="text-[#D22F25] font-bold hover:underline">
 							Evaluate ›
 						</a>
 					</div>
@@ -114,7 +114,7 @@
 
 		<div class="mt-8 text-center text-xs font-mono text-slate-500">
 			Looking for a custom operator-specific task not listed above? We qualify hundreds of additional tasks. 
-			<a href="#quote" class="text-[#D22F25] font-bold underline ml-1">Contact our Master Evaluator team</a>.
+			<a href="/quote" class="text-[#D22F25] font-bold underline ml-1">Contact our Master Evaluator team</a>.
 		</div>
 	</div>
 </section>

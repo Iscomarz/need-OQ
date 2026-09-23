@@ -146,7 +146,7 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 					<!-- Submitter Summary Card -->
 					<tr>
 						<td style="padding:24px 28px 12px 28px;">
-							<div style="background-color:#f8fafc;border-left:4px solid #D22F25;padding:16px 20px;border-radius:2px;">
+							<div style="background-color:#f8fafc;border:1px solid #cbd5e1;padding:16px 20px;border-radius:2px;">
 								<div style="font-size:11px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;">
 									Primary Contact
 								</div>

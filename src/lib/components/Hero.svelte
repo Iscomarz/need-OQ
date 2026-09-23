@@ -18,7 +18,7 @@
 			<!-- Main Headline -->
 			<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight leading-[1.08] uppercase text-white mb-6">
 				OPERATOR QUALIFICATION <br />
-				<span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400">
+				<span class="text-slate-200">
 					MADE FAST, ACCURATE &amp;
 				</span><br />
 				<span class="text-[#D22F25]">100% AUDIT-READY.</span>
@@ -33,13 +33,13 @@
 			<!-- Action CTAs -->
 			<div class="flex flex-wrap items-center gap-4 mb-14">
 				<a
-					href="#quote"
+					href="/quote"
 					class="px-7 py-3.5 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-lg shadow-red-950/40 hover:-translate-y-0.5"
 				>
 					Book Crew Evaluation
 				</a>
 				<a
-					href="#tasks"
+					href="/covered-tasks"
 					class="px-7 py-3.5 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white font-mono text-sm uppercase tracking-wider font-semibold transition-all hover:-translate-y-0.5"
 				>
 					View Covered Tasks

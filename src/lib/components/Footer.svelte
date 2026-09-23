@@ -29,12 +29,12 @@
 					Navigation
 				</div>
 				<ul class="space-y-2 text-xs font-mono">
-					<li><a href="#services" class="hover:text-white transition-colors">OQ Platforms</a></li>
-					<li><a href="#tasks" class="hover:text-white transition-colors">Common Covered Tasks</a></li>
-					<li><a href="#locations" class="hover:text-white transition-colors">Training Centers</a></li>
-					<li><a href="#accreditations" class="hover:text-white transition-colors">Accreditations</a></li>
-					<li><a href="#faq" class="hover:text-white transition-colors">Frequently Asked Questions</a></li>
-					<li><a href="#quote" class="text-[#D22F25] font-bold hover:underline">Get an OQ Quote</a></li>
+					<li><a href="/oq-pipeline" class="hover:text-white transition-colors">OQ Platforms</a></li>
+					<li><a href="/covered-tasks" class="hover:text-white transition-colors">Common Covered Tasks</a></li>
+					<li><a href="/locations" class="hover:text-white transition-colors">Training Centers</a></li>
+					<li><a href="/accreditations" class="hover:text-white transition-colors">Accreditations</a></li>
+					<li><a href="/faq" class="hover:text-white transition-colors">Frequently Asked Questions</a></li>
+					<li><a href="/quote" class="text-[#D22F25] font-bold hover:underline">Get an OQ Quote</a></li>
 				</ul>
 			</div>
 

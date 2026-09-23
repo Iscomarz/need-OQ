@@ -1,10 +1,18 @@
 <script lang="ts">
 	import { COMPANY_INFO } from '$lib/data/content';
+	import { page } from '$app/state';
 
 	let mobileMenuOpen = $state(false);
 
 	function toggleMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
+	}
+
+	function isActive(path: string) {
+		if (path === '/') {
+			return page.url.pathname === '/';
+		}
+		return page.url.pathname.startsWith(path);
 	}
 </script>
 
@@ -14,7 +22,7 @@
 		<div class="container mx-auto flex justify-between items-center">
 			<span class="flex items-center gap-2">
 				<span class="inline-block w-2 h-2 rounded-full bg-white animate-pulse"></span>
-				<span>PHMSA 49 CFR 192 & 195 | Remote Proctoring Now Available Nationwide</span>
+				<span>PHMSA 49 CFR 192 &amp; 195 | Remote Proctoring Now Available Nationwide</span>
 			</span>
 			<a href="tel:{COMPANY_INFO.phoneRaw}" class="hidden sm:inline-flex items-center gap-1.5 font-bold hover:underline">
 				<span>CALL DIRECT: {COMPANY_INFO.phone}</span>
@@ -40,12 +48,43 @@
 		</a>
 
 		<!-- Desktop Navigation Links -->
-		<nav class="hidden lg:flex items-center gap-7 text-sm font-medium">
-			<a href="#services" class="text-slate-300 hover:text-white transition-colors">Platforms & OQ</a>
-			<a href="#tasks" class="text-slate-300 hover:text-white transition-colors">Covered Tasks</a>
-			<a href="#locations" class="text-slate-300 hover:text-white transition-colors">Training Centers</a>
-			<a href="#accreditations" class="text-slate-300 hover:text-white transition-colors">Accreditations</a>
-			<a href="#faq" class="text-slate-300 hover:text-white transition-colors">OQ FAQ</a>
+		<nav class="hidden lg:flex items-center gap-6 text-xs font-mono font-semibold uppercase tracking-wider">
+			<a
+				href="/"
+				class="transition-colors py-1 {isActive('/') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+			>
+				Home
+			</a>
+			<a
+				href="/oq-pipeline"
+				class="transition-colors py-1 {isActive('/oq-pipeline') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+			>
+				Platforms &amp; OQ
+			</a>
+			<a
+				href="/covered-tasks"
+				class="transition-colors py-1 {isActive('/covered-tasks') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+			>
+				Covered Tasks
+			</a>
+			<a
+				href="/accreditations"
+				class="transition-colors py-1 {isActive('/accreditations') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+			>
+				Accreditations
+			</a>
+			<a
+				href="/locations"
+				class="transition-colors py-1 {isActive('/locations') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+			>
+				Training Centers
+			</a>
+			<a
+				href="/faq"
+				class="transition-colors py-1 {isActive('/faq') ? 'text-[#D22F25] font-bold border-b-2 border-[#D22F25]' : 'text-slate-300 hover:text-white'}"
+			>
+				OQ FAQ
+			</a>
 		</nav>
 
 		<!-- Actions -->
@@ -60,7 +99,7 @@
 				<span>{COMPANY_INFO.phone}</span>
 			</a>
 			<a
-				href="#quote"
+				href="/quote"
 				class="bg-[#D22F25] hover:bg-[#EB392F] text-white px-4 py-2 text-xs font-mono uppercase tracking-wider font-bold transition-all shadow-sm hover:-translate-y-0.5"
 			>
 				Request OQ Quote
@@ -88,37 +127,44 @@
 	{#if mobileMenuOpen}
 		<div class="lg:hidden bg-[#111111] border-b border-[#262626] px-4 py-4 space-y-3">
 			<a
-				href="#services"
+				href="/"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-slate-200 text-sm font-medium py-1.5 hover:text-white"
+				class="block text-sm font-medium py-1.5 {isActive('/') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
 			>
-				Platforms & OQ
+				Home
 			</a>
 			<a
-				href="#tasks"
+				href="/oq-pipeline"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-slate-200 text-sm font-medium py-1.5 hover:text-white"
+				class="block text-sm font-medium py-1.5 {isActive('/oq-pipeline') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+			>
+				Platforms &amp; OQ
+			</a>
+			<a
+				href="/covered-tasks"
+				onclick={() => (mobileMenuOpen = false)}
+				class="block text-sm font-medium py-1.5 {isActive('/covered-tasks') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
 			>
 				Covered Tasks
 			</a>
 			<a
-				href="#locations"
+				href="/accreditations"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-slate-200 text-sm font-medium py-1.5 hover:text-white"
-			>
-				Training Centers
-			</a>
-			<a
-				href="#accreditations"
-				onclick={() => (mobileMenuOpen = false)}
-				class="block text-slate-200 text-sm font-medium py-1.5 hover:text-white"
+				class="block text-sm font-medium py-1.5 {isActive('/accreditations') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
 			>
 				Accreditations
 			</a>
 			<a
-				href="#faq"
+				href="/locations"
 				onclick={() => (mobileMenuOpen = false)}
-				class="block text-slate-200 text-sm font-medium py-1.5 hover:text-white"
+				class="block text-sm font-medium py-1.5 {isActive('/locations') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
+			>
+				Training Centers
+			</a>
+			<a
+				href="/faq"
+				onclick={() => (mobileMenuOpen = false)}
+				class="block text-sm font-medium py-1.5 {isActive('/faq') ? 'text-[#D22F25] font-bold' : 'text-slate-200 hover:text-white'}"
 			>
 				OQ FAQ
 			</a>
@@ -130,7 +176,7 @@
 					Direct Line: {COMPANY_INFO.phone}
 				</a>
 				<a
-					href="#quote"
+					href="/quote"
 					onclick={() => (mobileMenuOpen = false)}
 					class="w-full text-center bg-[#D22F25] text-white py-2.5 text-xs font-mono uppercase tracking-wider font-bold"
 				>
