@@ -47,8 +47,7 @@ Busy safety managers and contractors under strict PHMSA compliance deadlines, ne
 - Primary Accent: Safety Red (`#D22F25`)
 - Dark Canvas: `#0A0A0A`
 - Light Canvas: `#F8F9FA`
-- Heading Typography: `Outfit`
-- Body Typography: `Plus Jakarta Sans`
+- Primary Font (Headings & Body): `Albert Sans`
 - Monospace Accents: `JetBrains Mono`
 
 ## Product Principles

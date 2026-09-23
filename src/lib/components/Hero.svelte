@@ -16,7 +16,7 @@
 			</div>
 
 			<!-- Main Headline -->
-			<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight leading-[1.08] uppercase text-white mb-6">
+			<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading tracking-tight leading-tight uppercase text-white mb-6">
 				OPERATOR QUALIFICATION <br />
 				<span class="text-slate-200">
 					MADE FAST, ACCURATE &amp;
@@ -25,7 +25,7 @@
 			</h1>
 
 			<!-- Subtitle -->
-			<p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed mb-8">
+			<p class="text-base sm:text-lg text-slate-300 max-w-2xl font-light leading-relaxed mb-8">
 				Born and bred in the oil patch. Either natural gas or hazardous liquid pipelines, we speak your language. 
 				Delivering PHMSA 49 CFR 192/195 evaluations through mobile field labs, our dedicated ATAC training centers, and remote proctoring.
 			</p>
@@ -34,13 +34,13 @@
 			<div class="flex flex-wrap items-center gap-4 mb-14">
 				<a
 					href="/quote"
-					class="px-7 py-3.5 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-lg shadow-red-950/40 hover:-translate-y-0.5"
+					class="px-7 py-3.5 bg-[#D22F25] hover:bg-[#EB392F] text-white font-mono text-sm uppercase tracking-wider font-semibold transition-all shadow-lg shadow-red-950/40 hover:-translate-y-0.5"
 				>
 					Book Crew Evaluation
 				</a>
 				<a
 					href="/covered-tasks"
-					class="px-7 py-3.5 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white font-mono text-sm uppercase tracking-wider font-semibold transition-all hover:-translate-y-0.5"
+					class="px-7 py-3.5 bg-[#171717] hover:bg-[#222222] border border-[#333333] text-white font-mono text-sm uppercase tracking-wider font-medium transition-all hover:-translate-y-0.5"
 				>
 					View Covered Tasks
 				</a>
@@ -48,20 +48,20 @@
 
 			<!-- Industrial Metrics Row -->
 			<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-[#222222]">
-				<div class="p-3 bg-[#121212] border-l-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-black text-white">25+</div>
+				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
+					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">25+</div>
 					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Years in Oil Patch</div>
 				</div>
-				<div class="p-3 bg-[#121212] border-l-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-black text-white">100s</div>
+				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
+					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">100s</div>
 					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Covered Tasks (CCTs)</div>
 				</div>
-				<div class="p-3 bg-[#121212] border-l-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-black text-white">3 WAYS</div>
+				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
+					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">3 WAYS</div>
 					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Mobile, Center &amp; CBT</div>
 				</div>
-				<div class="p-3 bg-[#121212] border-l-2 border-[#D22F25]">
-					<div class="text-2xl sm:text-3xl font-heading font-black text-white">6+</div>
+				<div class="p-3 bg-[#121212] border-t-2 border-[#D22F25]">
+					<div class="text-2xl sm:text-3xl font-heading font-bold text-white">6+</div>
 					<div class="text-xs font-mono text-slate-400 uppercase tracking-wider mt-1">Approved Platforms</div>
 				</div>
 			</div>

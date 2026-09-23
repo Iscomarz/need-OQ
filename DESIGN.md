@@ -22,8 +22,9 @@
 ---
 
 ## 3. Typography
-- **Headings (`h1`, `h2`, `h3`)**: `Outfit`, uppercase, extra-bold/black weight (`font-black` or `font-bold`), tracking tight (`tracking-tight`). Solid colors only — no gradient text.
-- **Body Text**: `Plus Jakarta Sans`, clean 14px–16px, leading relaxed (`leading-relaxed`).
+- **Primary Typeface**: `Albert Sans` (clean geometric sans-serif with delicate light, regular, and semibold weights for a sleek, contemporary, and professional industrial finish).
+- **Headings (`h1`, `h2`, `h3`)**: `Albert Sans`, uppercase, medium to bold weight (`font-semibold` or `font-bold`), tracking tight (`tracking-tight`). Solid colors only.
+- **Body Text**: `Albert Sans`, weights 300 (Light) to 400 (Regular), leading relaxed (`leading-relaxed`).
 - **Technical Badges & Metadata**: `JetBrains Mono`, uppercase, tracking widest (`tracking-widest`).
 
 ---
